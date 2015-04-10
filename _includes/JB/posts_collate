@@ -25,7 +25,11 @@ Usage:
     {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-  
+    
+    {% if next_year != empty and this_year != next_year %}
+    <div class="card-panel amber accent-4 z-depth-1 archive">
+    {% endif %}
+
     {% if forloop.first %}
       <h4>{{this_year}}</h4>
       <h5>{{this_month}}</h5>
@@ -36,9 +40,12 @@ Usage:
   
     {% if forloop.last %}
       </ul>
+      </div>
     {% else %}
       {% if this_year != next_year %}
         </ul>
+        </div>
+        <div class="card-panel amber accent-4 z-depth-1 archive">
         <h4>{{next_year}}</h4>
         <h5>{{next_month}}</h5>
         <ul>
@@ -50,6 +57,7 @@ Usage:
         {% endif %}
       {% endif %}
     {% endif %}
+    
   {% endfor %}
 {% endif %}
 {% assign posts_collate = nil %}

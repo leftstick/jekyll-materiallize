@@ -36,22 +36,12 @@
 }
 
 .tag {
+  margin-bottom: 5px;
   height: 30px;
   line-height: 30px;
   padding: 0 10px;
   text-transform: none; }
 
-.btn-group{
-  float: right;
-}
-
-.btn-group li{
-    list-style-type: none;
-    float: left;
-}
-.clear{
-    clear: both;
-}
 
 ul{
   margin-left: 17px;
@@ -73,4 +63,8 @@ pre[class*="language-"] code[class*="language-"]{
     background-color: transparent;
     font-style: normal;
     border-radius: 0;
+}
+
+.archive a{
+  color: #fff;
 }

@@ -1,12 +1,12 @@
 <div class="row">
     <div class="col s12 m8">
-        <h2>{% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h2>
+        {% if page.tagline %}<h2><small>{{ page.tagline }}</small></h2>{% endif %}
         {{ content }}
     </div>
     <div id="self-description" class="col s12 m4">
-        <br/>
-        <br/>
-        <br/>
+        {% if page.position == 1 %}
+        <div style="height: 103px;"></div>
+        {% endif %}
         <div class="card-panel grey lighten-5 z-depth-1">
             <div class="row valign-wrapper">
                 <div class="col s3 avatar">

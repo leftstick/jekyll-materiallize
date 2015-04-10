@@ -8,8 +8,8 @@ position: 1
 {% include JB/setup %}
 
 {% if site.posts %}
-{% assign posts = site.posts | sort: 'date' %}
-{% for post in posts reversed %}
+{% assign posts = site.posts %}
+{% for post in posts limit:5 %}
 <div class="card-panel cyan lighten-5 z-depth-1">
     <h5>
         <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>

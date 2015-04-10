@@ -1,42 +1,28 @@
 <div class="row">
-    <div class="col s12 m9">
-        <h2>{% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h2>
-        <p>Published on {{ page.date | date: "%F" }}</p>
+    <div class="col s12 m8">
+        {% if page.tagline %}<h2><small>{{page.tagline}}</small></h2>{% endif %}
         {{ content }}
 
-        <div>
-            <ul class="btn-group">
-                {% if page.previous %}
-                <li>
-                    <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn waves-effect waves-light blue darken-3" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
-                        &larr; Previous
-                    </a>
-                </li>
-                {% else %}
-                <li>
-                <a class="btn disabled" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
+        <div class="right-align">
+            {% if page.previous %}
+                <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
                     &larr; Previous
                 </a>
-                </li>
-                {% endif %}
-                <li>
-                    <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue darken-3" style="border-radius: 0;">Archive</a>
-                </li>
-                {% if page.next %}
-                <li>
-                    <a href="{{ BASE_PATH }}{{ page.next.url }}" class="btn waves-effect waves-light blue darken-3" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                        Next &rarr;
-                    </a>
-                </li>
-                {% else %}
-                <li>
-                    <a class="btn disabled" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                        Next &rarr;
-                    </a>
-                </li>
-                {% endif %}
-            </ul>
-            <div class="clear"></div>
+            {% else %}
+            <a class="btn disabled" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                &larr; Previous
+            </a>
+            {% endif %}
+                <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue" style="border-radius: 0;">Archive</a>
+            {% if page.next %}
+                <a href="{{ BASE_PATH }}{{ page.next.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                    Next &rarr;
+                </a>
+            {% else %}
+                <a class="btn disabled" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                    Next &rarr;
+                </a>
+            {% endif %}
         </div>
         
         <br/>
@@ -44,10 +30,16 @@
 
         {% include JB/comments %}
     </div>
-    <div class="col s12 m3">
-        <br/>
-        <br/>
-        <br/>
+    <div class="col s12 m4">
+        <div class="card blue-grey darken-1 z-depth-2">
+            <div class="card-content white-text">
+              <span class="card-title">{{ page.title }}</span>
+            </div>
+            <div class="card-action blue-grey lighten-3">
+                Created on {{ page.date | date: "%F" }}
+            </div>
+        </div>
+
         <div class="card-panel grey lighten-5 z-depth-2">
             <div class="row valign-wrapper">
                 <div class="col s12">
