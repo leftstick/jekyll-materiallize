@@ -3,7 +3,6 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile"]
-highlighter: pygments
 
 markdown: kramdown
 kramdown:
@@ -16,12 +15,14 @@ title : Jekyll Materiallize
 tagline: Site Tagline
 author :
   name : Name Lastname
-  email : blah@email.test
+  avatar : false
+  introduction : "A brief introduction should be placed here, in order to make the author known well to the reader"
+  email : user@email.test
   github : username
   twitter : username
   gitcafe: username
   weibo : weiboID
-  feedburner : feedname
+  facebook : username
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

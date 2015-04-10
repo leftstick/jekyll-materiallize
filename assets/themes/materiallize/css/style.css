@@ -1,0 +1,62 @@
+.container {
+  max-width: 1920px;}
+@media only screen and (min-width : 601px) {
+  .container {
+    width: 95%; } }
+
+@media only screen and (min-width : 993px) {
+  .container {
+    width: 85%; } }
+
+.nav-wrapper ul > li{
+  list-style-type: none;
+}
+
+#self-description .card-panel{
+    padding: 20px 5px;
+}
+#self-description .card-panel .valign-wrapper{
+    margin: 0;
+}
+#self-description .card-panel .avatar{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#self-description .card-panel .introduction{
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+#self-description .card-panel .social a{
+    margin-right: 10px;
+}
+#self-description .card-panel .social a:last-child{
+    margin-right: 0;
+}
+
+.tag {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-transform: none; }
+
+.btn-group{
+  float: right;
+}
+
+.btn-group li{
+    list-style-type: none;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+ul{
+  margin-left: 17px;
+}
+
+ul > li{
+  list-style-type: disc;
+}

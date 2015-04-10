@@ -1,9 +1,78 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div>
-
 <div class="row">
-  <div class="col-xs-12">
-    {{ content }}
-  </div>
+    <div class="col s12 m8">
+        <h2>{% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h2>
+        {{ content }}
+    </div>
+    <div id="self-description" class="col s12 m4">
+        <br/>
+        <br/>
+        <br/>
+        <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+                <div class="col s3 avatar">
+                    {% if site.author.avatar %}
+                    <img src="{{ BASE_PATH }}/assets/images/{{ site.author.avatar }}" class="circle responsive-img">
+                    {% else %}
+                    <img src="{{ BASE_PATH }}/assets/images/default_avatar.png" class="circle responsive-img">
+                    {% endif %}
+                </div>
+                <div class="col s9 introduction">
+                    <h5>{{ site.author.name }}</h5>
+                    <span class="black-text">
+                        {{ site.author.introduction }}
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <br/>
+            <div class="row social">
+                <div class="col s12 center-align">
+                    {% if site.author.gitcafe %}
+                    <a href="https://gitcafe.com/{{ site.author.gitcafe }}" class="btn-floating waves-effect waves-light indigo tooltip" title="gitcafe" target="_blank">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.author.github %}
+                    <a href="https://github.com/{{ site.author.github }}" class="btn-floating waves-effect waves-light indigo tooltip" title="github" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.author.weibo %}
+                    <a href="http://weibo.com/u/{{ site.author.weibo }}" class="btn-floating waves-effect waves-light indigo tooltip" title="sina weibo" target="_blank">
+                        <i class="fa fa-weibo"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.author.facebook %}
+                    <a href="http://www.facebook.com/{{ site.author.facebook }}" class="btn-floating waves-effect waves-light indigo tooltip" title="facebook" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.author.twitter %}
+                    <a href="https://twitter.com/{{ site.author.twitter }}" class="btn-floating waves-effect waves-light indigo tooltip" title="twitter" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.author.email %}
+                    <a href="mailto:{{ site.author.email }}" class="btn-floating waves-effect waves-light indigo tooltip" title="email" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+                <div class="col s8">
+                    <i class="fa fa-line-chart"></i>&nbsp;
+                    <strong>Total Posts</strong>
+                </div>
+                <div class="col s4 right-align">
+                  <span class="black-text">
+                      {{ site.posts | size }}
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
