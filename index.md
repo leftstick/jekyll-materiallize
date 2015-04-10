@@ -12,14 +12,14 @@ position: 1
 {% for post in posts reversed %}
 <div class="card-panel cyan lighten-5 z-depth-1">
     <h5>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
     </h5>
     <p>
         <i class="fa fa-clock-o"></i> Publish on {{ post.date | date: "%F" }}
     </p>
     <hr>
     <p>{{ post.shortContent }}......</p>
-    <a class="btn waves-effect waves-light light-blue darken-2" href="{{ post.url }}">
+    <a class="btn waves-effect waves-light light-blue darken-2" href="{{ BASE_PATH }}{{ post.url }}">
         Read More <i class="mdi-content-send right"></i>
     </a>
 

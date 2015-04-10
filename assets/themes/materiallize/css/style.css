@@ -60,3 +60,17 @@ ul{
 ul > li{
   list-style-type: disc;
 }
+
+code{
+    padding: 3px 5px;
+    background-color: #e57373;
+    border-radius: 2px;
+    color: #fff;
+    font-style: italic;
+}
+pre[class*="language-"] code[class*="language-"]{
+    padding: 0;
+    background-color: transparent;
+    font-style: normal;
+    border-radius: 0;
+}

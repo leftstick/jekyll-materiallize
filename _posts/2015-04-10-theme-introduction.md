@@ -31,12 +31,15 @@ A material flavor theme based on Jekyll-Bootstrap.
 ### How to use jekyll-materiallize?
 
 * Visit [Github](https://github.com/) and create an empty repo in specified format like `<USERNAME>.github.io`
-* sdfdsf
+* Execute following commands
 
 ```bash
 cd <workspace>
 git clone https://github.com/leftstick/jekyll-materiallize <USERNAME>.github.io
 cd <USERNAME>.github.com
-git remote set-url origin git@github.com:<USERNAME>/<USERNAME>.github.io.git
-git push origin master  
+git remote add origin git@github.com:<USERNAME>/<USERNAME>.github.io.git
+git push -u origin master  
 ```
+
+* Modify attributes in `_config.yml` such as `title` , `tagline` , `author` , `production_url` , `comments` , `analytics`
+* Feel free to register issue while you are encountering problems
