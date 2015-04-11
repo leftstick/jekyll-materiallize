@@ -12,19 +12,19 @@ kramdown:
 # so be sure to set them if your theme uses them.
 #
 title : Jekyll Materiallize
-tagline: Site Tagline
+tagline: Materiallize blog
 lang: en
 footerDetail: true
 author :
-  name : Name Lastname
+  name : Howard.Zuo
   avatar : false
-  introduction : "A brief introduction should be placed here, in order to make the author known well to the reader"
-  email : user@email.test
-  github : username
-  twitter : username
-  gitcafe: username
-  weibo : weiboID
-  facebook : username
+  introduction : "沙滩一卧两年半，今日浪打我翻身!"
+  email : leftstick@qq.com
+  github : leftstick
+  twitter : false
+  gitcafe: leftstick
+  weibo : 1837649133
+  facebook : false
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -87,18 +87,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
-    disqus :
-      short_name : jekyllmateriallize
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+    provider : custom
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
