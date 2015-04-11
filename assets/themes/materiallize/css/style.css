@@ -100,6 +100,7 @@ pre[class*="language-"] code[class*="language-"] .tag{
 }
 
 .goto-top{
+  display: none;
   cursor: pointer;
   position: fixed;
   right: 80px;
