@@ -78,6 +78,10 @@ pre[class*="language-"] code[class*="language-"]{
     border-radius: 0;
 }
 
+pre[class*="language-"] code[class*="language-"] .tag{
+  padding: 0;
+}
+
 .archive a{
   color: #fff;
 }
