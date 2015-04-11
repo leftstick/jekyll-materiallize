@@ -13,7 +13,7 @@ kramdown:
 #
 title : Jekyll Materiallize
 tagline: Site Tagline
-lang: zh
+lang: en
 footerDetail: true
 author :
   name : Name Lastname

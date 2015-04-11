@@ -41,5 +41,10 @@ git remote add origin git@github.com:<USERNAME>/<USERNAME>.github.io.git
 git push -u origin master  
 ```
 
-* Modify attributes in `_config.yml` such as `title` , `tagline` , `author` , `production_url` , `comments` , `analytics`
+* Modify attributes in `_config.yml` such as `title` , `tagline` , `lang` , `footerDetail` , `author` , `production_url` , `comments` , `analytics`
 * Feel free to register issue while you are encountering problems
+
+##### Description
+
+`lang` Which language you preferred to display in your blog, two languages are available, ___zh___, ___en___. You can easily extend any language you like in `assets/lang/lang.js`
+`footerDetail` Whether to display the detail part of the footer
