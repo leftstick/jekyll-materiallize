@@ -6,21 +6,21 @@
         <div class="right-align">
             {% if page.previous %}
                 <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
-                    &larr; Previous
+                    &larr; <span lang="PREVIOUS_BTN"></span>
                 </a>
             {% else %}
             <a class="btn disabled" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
-                &larr; Previous
+                &larr; <span lang="PREVIOUS_BTN"></span>
             </a>
             {% endif %}
-                <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue" style="border-radius: 0;">Archive</a>
+                <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue" style="border-radius: 0;" lang="ARCHIVE_BTN"></a>
             {% if page.next %}
                 <a href="{{ BASE_PATH }}{{ page.next.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                    Next &rarr;
+                    <span lang="NEXT_BTN"></span> &rarr;
                 </a>
             {% else %}
                 <a class="btn disabled" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                    Next &rarr;
+                    <span lang="NEXT_BTN"></span> &rarr;
                 </a>
             {% endif %}
         </div>
@@ -35,15 +35,15 @@
             <div class="card-content white-text">
               <span class="card-title">{{ page.title }}</span>
             </div>
-            <div class="card-action blue-grey lighten-3">
-                Created on {{ page.date | date: "%F" }}
+            <div class="card-action blue-grey lighten-4">
+                <span lang="CREATED_ON"></span> {{ page.date | date: "%F" }}
             </div>
         </div>
 
         <div class="card-panel grey lighten-5 z-depth-2">
             <div class="row valign-wrapper">
                 <div class="col s12">
-                    <i class="fa fa-server fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4">Categories</strong>
+                    <i class="fa fa-server fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4" lang="CATEGORIES"></strong>
                     <hr>
                     {% unless page.categories == empty %}
                       {% for category in page.categories %}
@@ -59,7 +59,7 @@
         <div class="card-panel grey lighten-5 z-depth-2">
             <div class="row valign-wrapper">
                 <div class="col s12">
-                    <i class="fa fa-flag fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4">Tags</strong>
+                    <i class="fa fa-flag fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4" lang="TAGS"></strong>
                     <hr>
                     {% unless page.tags == empty %}
                       {% for tag in page.tags %}

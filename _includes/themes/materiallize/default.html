@@ -56,31 +56,44 @@
               <ul class="right hide-on-med-and-down">
                   {% assign pages_list = site.pages | sort: 'position' %}
                   {% assign group = 'navigation' %}
-                  {% include JB/pages_list %}
+                  {% include JB/navigation %}
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
                   {% assign pages_list = site.pages | sort: 'position' %}
                   {% assign group = 'navigation' %}
-                  {% include JB/pages_list %}
+                  {% include JB/navigation %}
               </ul>
               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
           </div>
       </nav>
-
-      <div class="container">
-          {{ content }}
-      </div>
-      <hr>
-
-      <div id="footer">
+      
+      <main>
           <div class="container">
-              <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-                with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-                and <a href="http://leftstick.github.com/jekyll-materiallize/" target="_blank">jekyll-materiallize</a>
-              </p>
+              {{ content }}
           </div>
-      </div>
+      </main>
+
+      <footer class="page-footer" {% unless site.footerDetail %}style="padding-top:0;"{% endunless %}>
+          {% if site.footerDetail %}
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h5 class="white-text">Help Materialize Grow</h5>
+                <p class="grey-text text-lighten-4">Jekyll-Materiallize is an open source project which based on materializecss and Jekyll-Bootstrap. It's very welcome to give an issue while you find bug or something you preferred to have in this project.</p>
+                <a class="btn waves-effect waves-light red lighten-3 right" href="https://github.com/leftstick/jekyll-materiallize">Github
+                </a>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          <div class="footer-copyright">
+            <div class="container">
+            &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}, All rights reserved.
+            <a class="grey-text text-lighten-4 right" href="https://github.com/leftstick/jekyll-materiallize/blob/master/LICENSE">MIT License</a>
+            </div>
+          </div>
+      </footer>
 
       {% include JB/analytics %}
 
@@ -90,6 +103,7 @@
       <script src="{{ ASSET_PATH }}/js/jquery.tooltipster.min.js"></script>
       <script src="{{ ASSET_PATH }}/js/prism.js"></script>
       <script src="{{ ASSET_PATH }}/js/prism.clojure.js"></script>
+      <script src="{{ BASE_PATH }}/assets/lang/lang.js"></script>
       <script src="{{ ASSET_PATH }}/js/init.js"></script>
   </body>
 </html>

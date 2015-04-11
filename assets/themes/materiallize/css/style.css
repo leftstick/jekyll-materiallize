@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
 .container {
   max-width: 1920px;}
 @media only screen and (min-width : 601px) {
