@@ -19,7 +19,8 @@
         TAGS: 'Tags',
         READ_MORE_BTN: 'Read More',
         HOME: 'Home',
-        ARCHIVE: 'Archive'
+        ARCHIVE: 'Archive',
+        MORE_INFO: 'More Reads'
     };
 
     language.zh = {
@@ -32,7 +33,8 @@
         TAGS: '标签',
         READ_MORE_BTN: '阅读更多',
         HOME: '首页',
-        ARCHIVE: '里程碑'
+        ARCHIVE: '里程碑',
+        MORE_INFO: '更多文章'
     };
 
     
