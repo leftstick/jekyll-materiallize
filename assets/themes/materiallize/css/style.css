@@ -17,6 +17,19 @@ main {
   .container {
     width: 85%; } }
 
+@media only screen and (max-width : 600px){
+  nav .brand-logo{
+    left: 119px;
+    font-size: 25px;
+  }
+  .pagination-group{
+    text-align: center;
+  }
+  .pagination-group a{
+    padding: 0 10px;
+  }
+}
+
 img{
   max-width: 100%;
 }

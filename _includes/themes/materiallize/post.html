@@ -3,7 +3,7 @@
         {% if page.tagline %}<h2><small>{{page.tagline}}</small></h2>{% endif %}
         {{ content }}
 
-        <div class="right-align">
+        <div class="right-align pagination-group">
             {% if page.previous %}
                 <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
                     &larr; <span lang="PREVIOUS_BTN"></span>
@@ -30,7 +30,7 @@
 
         {% include JB/comments %}
     </div>
-    <div class="col s12 m4">
+    <div class="col m4 hide-on-small-only">
         <div class="card blue-grey darken-1 z-depth-2">
             <div class="card-content white-text">
               <span class="card-title">{{ page.title }}</span>
