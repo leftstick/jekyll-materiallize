@@ -17,6 +17,10 @@ main {
   .container {
     width: 85%; } }
 
+img{
+  max-width: 100%;
+}
+
 .nav-wrapper ul > li{
   list-style-type: none;
 }
