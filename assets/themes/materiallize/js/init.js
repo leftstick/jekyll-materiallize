@@ -60,6 +60,11 @@
     };
 
     var setGotoTop = function() {
+        if ($doc.scrollTop() > 100) {
+            $gotoTop.show();
+        } else {
+            $gotoTop.hide();
+        }
         $doc.on('scroll', onscroll);
         $gotoTop.on('click', onclick);
     };
@@ -82,5 +87,17 @@
         setGotoTop();
     }
 
+    var isWechat = function() {
+        var ua = global.navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+            return true;
+        } else {
+            return false;
+        }
+    };
+
+    if (isWechat()) {
+        $('html').addClass('wechat');
+    }
 
 })(jQuery, window);
