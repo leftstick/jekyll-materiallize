@@ -111,8 +111,16 @@ pre[class*="language-"] code[class*="language-"] .tag{
   z-index: 10;
   box-shadow: 2px 2px 2px #1a237e;
   transition: box-shadow 0.3s ease 0;
+  -moz-transition: box-shadow 0.3s ease 0;
+  -webkit-transition: box-shadow 0.3s ease 0;
+  -o-transition: box-shadow 0.3s ease 0;
 }
 
 .goto-top:hover{
   box-shadow: 5px 5px 5px #1a237e;
+}
+
+.mod-no-flexbox .valign-wrapper,
+.wechat .valign-wrapper{
+    display: block;
 }
