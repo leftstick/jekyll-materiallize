@@ -37,7 +37,7 @@ A material flavor blog based on Jekyll-Bootstrap.
 cd <workspace>
 git clone https://github.com/leftstick/jekyll-materiallize <USERNAME>.github.io
 cd <USERNAME>.github.com
-git remote add origin git@github.com:<USERNAME>/<USERNAME>.github.io.git
+git remote set-url origin git@github.com:<USERNAME>/<USERNAME>.github.io.git
 git push -u origin master  
 ```
 
