@@ -110,10 +110,10 @@ pre[class*="language-"] code[class*="language-"] .tag{
   padding: 4px 8px 8px 8px;
   z-index: 10;
   box-shadow: 2px 2px 2px #1a237e;
-  transition: box-shadow 0.3s ease 0;
-  -moz-transition: box-shadow 0.3s ease 0;
-  -webkit-transition: box-shadow 0.3s ease 0;
-  -o-transition: box-shadow 0.3s ease 0;
+  transition: box-shadow 0.3s ease 0s;
+  -moz-transition: box-shadow 0.3s ease 0s;
+  -webkit-transition: box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
 }
 
 .goto-top:hover{
