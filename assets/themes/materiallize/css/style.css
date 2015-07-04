@@ -78,10 +78,10 @@ ul > li{
 }
 
 code{
-    padding: 3px 5px;
-    background-color: #e57373;
-    border-radius: 2px;
-    color: #fff;
+    padding: 3px;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    color: #000;
     font-style: italic;
 }
 pre[class*="language-"] code[class*="language-"]{
