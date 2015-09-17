@@ -16,9 +16,9 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
 
     {% if BASE_PATH %}
-    <base href="{{ BASE_PATH }}">
+    <base href="{{ BASE_PATH }} {{ page.url }}">
     {% else %}
-    <base href="/">
+    <base href="{{ page.url }}">
     {% endif %}
 
     <!-- materiallize styles -->
@@ -29,7 +29,7 @@
     <link href="{{ ASSET_PATH }}/css/tooltipster.css" rel="stylesheet">
     <!-- prism styles -->
     <link href="{{ ASSET_PATH }}/css/prism.css" rel="stylesheet">
-    
+
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet" type="text/css" media="all">
 
@@ -45,7 +45,7 @@
     <link rel="apple-touch-icon" href="{{ BASE_PATH }}/assets/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ BASE_PATH }}/assets/images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ BASE_PATH }}/assets/images/apple-touch-icon-114x114.png">
-    
+
     <!-- modernizr -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/modernizr.js"></script>
 
@@ -70,7 +70,7 @@
               <a href="#" data-activates="nav-mobile" class="button-collapse right"><i class="mdi-navigation-menu"></i></a>
           </div>
       </nav>
-      
+
       <main>
           <div class="container">
               {{ content }}
