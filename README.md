@@ -2,4 +2,4 @@
 A jekyll blog theme based on materiallize
 
 
-Check the documentation of usage here: [Introduction](http://leftstick.github.io/jekyll-materiallize/tutorial/2015/04/10/theme-introduction/)
+Check the documentation of usage here: [Introduction](http://leftstick.github.io/tech/2016/03/10/create-blog)
