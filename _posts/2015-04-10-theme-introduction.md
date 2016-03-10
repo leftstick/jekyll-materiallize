@@ -17,15 +17,9 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 For more information, please read [Jekyll](http://jekyllrb.com/)
 
-##### What is Jekyll-Bootstrap?
-
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages.
-
-For more information, please read [Jekyll-Bootstrap](http://jekyllbootstrap.com/)
-
 ##### What is Jekyll-materiallize?
 
-A material flavor blog based on Jekyll-Bootstrap.
+A blog theme system based on material design.
 
 
 ##### How to use jekyll-materiallize?
@@ -34,7 +28,6 @@ A material flavor blog based on Jekyll-Bootstrap.
 * Execute following commands
 
 ```bash
-cd <workspace>
 git clone https://github.com/leftstick/jekyll-materiallize <USERNAME>.github.io
 cd <USERNAME>.github.com
 git remote set-url origin git@github.com:<USERNAME>/<USERNAME>.github.io.git

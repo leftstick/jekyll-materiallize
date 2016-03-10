@@ -124,3 +124,18 @@ pre[class*="language-"] code[class*="language-"] .tag{
 .wechat .valign-wrapper{
     display: block;
 }
+
+pre.highlight::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
+
+pre.highlight::-webkit-scrollbar,
+pre.highlight::-webkit-scrollbar-button
+{
+    background-color: transparent;
+}
+pre.highlight::-webkit-scrollbar-thumb{
+    background-color: #D8D8D8;
+    border-radius: 5px;
+}
