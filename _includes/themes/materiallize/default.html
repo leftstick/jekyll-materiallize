@@ -4,7 +4,11 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
+    {% if page.group %}
+    <title lang="{{ page.title | upcase }}"></title>
+    {% else %}
     <title>{{ page.title }}</title>
+    {% endif %}
 
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
